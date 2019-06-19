@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../logo.svg';
 import styled from 'styled-components';
-import { yellow, elevation } from '../utilities';
+import { elevation, encode, salmon } from '../utilities';
 
 const Header = ( { className } ) => {
     return (        
@@ -12,20 +12,13 @@ const Header = ( { className } ) => {
 };
 
 export default styled(Header)`
-    background: ${yellow};
+    background: ${salmon};
     padding: 10px 5%;
-    ${elevation[1]};
+    ${encode};
+    ${elevation[3]};
     .logo{
         width: 60px;
     }
+    
 `;
 
-/*
-const styledHeader = styled(Header)`
-    background: teal;
-    padding: 10px 5%;
-    .logo{
-        width: 60px;
-    }
-`;
-*/
