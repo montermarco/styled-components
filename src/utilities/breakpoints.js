@@ -17,10 +17,9 @@ export const above = Object.keys(size).reduce( (acc, label) => {
 
 export const below = Object.keys(size).reduce( (acc, label) => {
     acc[label] = (...args) => css`
-        @meida ( max-width: ${ size[label]}px ) {
+        @media ( max-width: ${ size[label]}px ) {
             ${ css(...args) }
         }
     `;
     return acc;
 }, {} );
-

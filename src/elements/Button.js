@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import { salmon, teal, elevation, orange, green } from '../utilities';
+import { salmon, teal, elevation } from '../utilities';
 
 export const Button = styled.button`
     padding: 5px 40px;
     border-radius: 4px;
     color: white;
-    ${elevation[1]};
+    ${elevation[3]};
     font-size: 2rem;
     border: none;
-    background: ${ green };
+    background: ${ teal };
     ${ ({ size }) => {
         if(size === 'sm'){
             return `
@@ -21,7 +21,7 @@ export const Button = styled.button`
     ${ ({ type }) => {
         if(type === 'cancel'){
             return `
-            background: ${ orange };
+            background: ${ salmon };
             `;
         }
     }};

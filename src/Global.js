@@ -1,28 +1,20 @@
  import { createGlobalStyle } from 'styled-components'
 
- const GlobalStyle = createGlobalStyle`
-    //*? we get 100% width 60px, no 100% plus 60px
-    html {
+const GlobalStyle = createGlobalStyle`
+       html {
         box-sizing: border-box;
     }
 
-    //*? make width 100% and fixed header that pushes the content down
     *, *:before, *:after {
         box-sizing: inherit;
     }
- 
+
     body {
-        margin: 0;
-        padding: 65px 0 0:
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
+        margin: 15px;
+        background-color: #E0E5EC;        
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    
-    
- `;
+`;
 
- export default GlobalStyle;
-
+export default GlobalStyle;
